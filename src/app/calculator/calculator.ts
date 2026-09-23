@@ -24,5 +24,18 @@ export class Calculator {
     this.result = this.toNumber(firstValue) - this.toNumber(secondValue);
   }
 
-  // TODO (deuxième moitié) : ajouter multiplication, division et les tests.
+  multiply(firstValue:string, secondValue:string):void {
+    this.result = this.toNumber(firstValue)*this.toNumber(secondValue);
+  }
+
+  divide(firstValue:string,secondValue:string){
+    if( this.toNumber(secondValue) != 0){
+      this.result = this.toNumber(firstValue)/this.toNumber(secondValue);
+    }else{
+      //Can be seen when looking at the console in the inspect panel of a web browser
+      console.error("Division by 0 should not be done");
+    }
+  }
+
+
 }

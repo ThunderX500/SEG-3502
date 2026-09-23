@@ -20,7 +20,7 @@
     <button type="button" (click)="subtract(firstNumber.value, secondNumber.value)">-</button>
 
     <!-- Ces deux opérations seront faites dans la deuxième moitié. -->
-    <button type="button" disabled>*</button>
-    <button type="button" disabled>/</button>
+    <button type="button" (click)="multiply(firstNumber.value,secondNumber.value)">*</button>
+    <button type="button" (click)="divide(firstNumber.value,secondNumber.value)">/</button>
   </div>
 </section>
