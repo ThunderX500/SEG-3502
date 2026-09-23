@@ -1,0 +1,26 @@
+<section class="calculator">
+  <div class="row">
+    <label for="first-number">Premier nombre:</label>
+    <input id="first-number" #firstNumber type="number">
+  </div>
+
+  <div class="row">
+    <label for="second-number">Second nombre:</label>
+    <input id="second-number" #secondNumber type="number">
+  </div>
+
+  <div class="row">
+    <label for="result">Résultat:</label>
+    <input id="result" type="number" [value]="result ?? ''" readonly>
+  </div>
+
+  <div class="buttons">
+    <!-- Deux opérations sont fonctionnelles pour cette première moitié. -->
+    <button type="button" (click)="add(firstNumber.value, secondNumber.value)">+</button>
+    <button type="button" (click)="subtract(firstNumber.value, secondNumber.value)">-</button>
+
+    <!-- Ces deux opérations seront faites dans la deuxième moitié. -->
+    <button type="button" disabled>*</button>
+    <button type="button" disabled>/</button>
+  </div>
+</section>
