@@ -1,0 +1,10 @@
+# Dependencies and generated Angular files
+/node_modules
+/dist
+/.angular
+
+# Local editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
