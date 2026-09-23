@@ -33,6 +33,7 @@ export class Calculator {
       this.result = this.toNumber(firstValue)/this.toNumber(secondValue);
     }else{
       //Can be seen when looking at the console in the inspect panel of a web browser
+      this.result =  Infinity;
       console.error("Division by 0 should not be done");
     }
   }

@@ -25,6 +25,14 @@
           "options": {
             "buildTarget": "seg-3502-lab1-calculator:build"
           }
+        },
+        "test":{
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "buildTarget": "seg-3502-lab1-calculator:build",
+            "tsConfig": "tsconfig.spec.json",
+            "runner":"vitest"
+          }
         }
       }
     }
